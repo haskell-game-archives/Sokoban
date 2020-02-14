@@ -2,3 +2,6 @@
 *.o
 sokoban
 *.exe
+dist-*
+.stack-work
+assets/levels

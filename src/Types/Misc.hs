@@ -1,5 +1,11 @@
-module Types.Misc(
+module Types.Misc (
   Direction(..),
 ) where
   
-data Direction = L | R | U | D | Other deriving (Show, Eq)
+data Direction
+  = L
+  | R
+  | U
+  | D
+  | Other
+  deriving (Show, Eq)
