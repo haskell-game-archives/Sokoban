@@ -1,6 +1,9 @@
 Sokoban
 =======
 
+![cabal](https://github.com/haskell-game-archives/Sokoban/workflows/cabal/badge.svg)
+![stack](https://github.com/haskell-game-archives/Sokoban/workflows/stack/badge.svg)
+
 A Sokoban implementation using Haskell and Gloss.
 
 Currently uses David W. Skinner's Sasquatch packs for levels: http://www.abelmartin.com/rj/sokobanJS/Skinner/David%20W.%20Skinner%20-%20Sokoban.htm
