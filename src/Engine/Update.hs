@@ -90,7 +90,7 @@ movePlayer dir point w@(Level _ boxes walls switches)
     wPoints@(Level _ bxs wls sws) = fmap getPoint w
 
 gameUpdateBoard :: Game -> Direction -> Level Square
-gameUpdateBoard = (flip updateBoard) . currentLevel
+gameUpdateBoard = flip updateBoard . currentLevel
 
 updateBoard :: Direction -> Level Square -> Level Square
 updateBoard dir w = movePlayer dir p' w
@@ -124,9 +124,9 @@ globalUpdateHandler e@(EventKey key keyState _ p) g =
         return g
       Char 'r' -> loadGame
       MouseButton LeftButton ->
-        if p `inRect` (rect restartButton)
+        if p `inRect` rect restartButton
           then loadGame
-          else if p `inRect` (rect exitButton)
+          else if p `inRect` rect exitButton
             then exitSuccess
             else return g
       _ -> return g
