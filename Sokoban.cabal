@@ -6,21 +6,21 @@ author:        Benjamin Kovach
 maintainer:    bkovach5@uga.edu
 category:      Game
 build-type:    Simple
-tested-with:   GHC ==8.6.5 || ==8.8.2
+tested-with:   GHC ==8.6.5 || ==8.8.4 || ==8.10.2
 
 common common
-  build-depends:    base >=4.12 && <4.14
+  build-depends:    base >=4.12 && <4.15
   default-language: Haskell2010
 
 library
   import:          common
   hs-source-dirs:  src
   build-depends:
-    , directory
+    , directory     ^>=1.3
     , gloss         ^>=1.13
     , mtl           ^>=2.2
-    , parsec
-    , transformers
+    , parsec        ^>=3.1
+    , transformers  ^>=0.5
 
   exposed-modules:
     Engine.Update

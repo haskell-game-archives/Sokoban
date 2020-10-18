@@ -1,8 +1,9 @@
 Sokoban
 =======
 
-![cabal](https://github.com/haskell-game-archives/Sokoban/workflows/cabal/badge.svg)
-![stack](https://github.com/haskell-game-archives/Sokoban/workflows/stack/badge.svg)
+[![cabal](https://github.com/haskell-game-archives/Sokoban/workflows/cabal/badge.svg)](https://github.com/haskell-game-archives/Sokoban/actions?query=workflow%3Acabal)
+[![stack](https://github.com/haskell-game-archives/Sokoban/workflows/stack/badge.svg)](https://github.com/haskell-game-archives/Sokoban/actions?query=workflow%3Astack)
+[![lint](https://github.com/haskell-game-archives/Sokoban/workflows/lint/badge.svg)](https://github.com/haskell-game-archives/Sokoban/actions?query=workflow%3Alint)
 
 A Sokoban implementation using Haskell and Gloss.
 
