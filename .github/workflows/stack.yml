@@ -27,18 +27,9 @@ jobs:
         stack-version: "2.5.1"
         enable-stack: true
 
-    - name: Cache ~/.stack
-      uses: actions/cache@v2
-      with:
-        path: ~/.stack
-        key: ${{ runner.os }}-${{ matrix.resolver }}-${{ matrix.cache-version }}-stack
-
     - name: Install libralies (linux)
       if: runner.os == 'Linux'
-      # workaround: https://github.com/actions/virtual-environments/issues/1811
       run: |
-        brew untap local/homebrew-openssl
-        brew untap local/homebrew-python2
         sudo apt-get update
         sudo apt-get install -y freeglut3-dev
 
