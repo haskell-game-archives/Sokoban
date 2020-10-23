@@ -34,7 +34,6 @@ library
 
 executable Sokoban
   import:         common
-  hs-source-dirs: app
-  main-is:        Main.hs
+  main-is:        app/Main.hs
   build-depends:  Sokoban
   ghc-options:    -O2
